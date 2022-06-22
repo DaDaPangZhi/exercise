@@ -3,7 +3,7 @@ package builder_test
 import (
 	"testing"
 
-	builder "design/02_builder"
+	builder "exercise/design/02_builder"
 )
 
 func TestBuilder(t *testing.T) {

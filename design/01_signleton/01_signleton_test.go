@@ -1,7 +1,7 @@
 package singleton_test
 
 import (
-	singleton "design/01_signleton"
+	singleton "exercise/design/01_signleton"
 	"testing"
 
 	"github.com/stretchr/testify/assert"

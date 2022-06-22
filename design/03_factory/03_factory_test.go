@@ -1,7 +1,7 @@
 package factory_test
 
 import (
-	factory "design/03_factory"
+	factory "exercise/design/03_factory"
 	"fmt"
 	"testing"
 )
