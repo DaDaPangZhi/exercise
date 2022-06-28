@@ -36,14 +36,14 @@ func wait() {
  * @return {*}
  */
 func allow() {
-	limiter := rate.NewLimiter(4, 1)
+	limiter := rate.NewLimiter(4, 3)
 	for i := 0; i < 10; i++ {
 		if limiter.Allow() {
 			fmt.Printf("%03d Ok  %s\n", i, time.Now().Format("2006-01-02 15:04:05.000"))
 		} else {
 			fmt.Printf("%03d Err %s\n", i, time.Now().Format("2006-01-02 15:04:05.000"))
 		}
-		time.Sleep(100 * time.Millisecond)
+		// time.Sleep(100 * time.Millisecond)
 	}
 }
 
